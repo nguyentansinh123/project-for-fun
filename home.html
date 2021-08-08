@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="main ">
+        <div id="box1"></div>
+        <div id="box2">
+            <div id="text">
+                WelCome to <br>Home Page
+            </div>
+        </div>
+        <div id="box3"></div>
+        <button class="btn">Go to Home Page</button>
+    </div>
+ 
+    <nav id="nav" class="initial">
+        <ul>
+            <li> <a data-page="introduce" href="">Introduce</a></li>
+            <li> <a data-page="overview" href="">Overview</a></li>
+            <li> <a href="./products/product.html">Unrelease</a></li>
+            <li> <a href="./funproject/index.html">Home</a></li>
+            <li> <a href="./Login page/index.html"><button class="btn btn1">Login</button></a> </li>
+            <div class="bubble"></div>
+        </ul>
+    </nav>
+
+    <main class="mymain hide">
+        <section data-index="0" class="introduce">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="slide1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="slide2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="slide3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="slide4.jpg" alt="">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+        <section id="section2" data-index="1" class="overview">
+           
+            <h2 class="overview2">Overview</h2>
+            <div class="line"></div>
+
+            <div class="overview-whitespace"></div>
+            <div class="overview-template">
+                <img class="overview-picture" src="./overview.jpg" alt="">
+            </div>
+            <div class="overview-template-text">
+                <h1 class="overviewh1">Lorem, ipsum.</h1>
+                <h3 class="overviewh3">Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit <br> . Deleniti vero voluptate, laboriosam<br>  nemo  dignissimos accusamus veritatis <br> sed dolor officia molestias. <br> Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. <br> Debitis, et exercitationem sint  <br> commodi voluptatibus quidem quo <br> rem quam neque ea!</h3>
+                <button class="btn2 btn1">Read More</button>
+            </div>
+        </section>
+    </main>
+    <div class="myfoot">
+    <footer class="footer nolo">
+        <h1 class="footer-text">CopyRight@ by Sinhdeptrai 2021</h1>
+    </footer>
+</div>
+    <script src="home.js"></script>
+</body>
+</html>

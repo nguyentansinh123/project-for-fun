@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'STIX Two Text', serif;
+
+}
+body{
+    height: 100vh;
+}
+nav{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+li{
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+}
+nav{
+    background: #fff;
+    box-shadow: 0px 3px 10px rgb(148, 148, 148);
+    position: fixed;
+    width: 100%;
+    animation: slideme 1.6s ease-in;
+    z-index: 5; 
+}
+@keyframes slideme{
+    0%{
+    transform:translateX(-1000px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    100%{
+    transform: skew(0deg);
+    }
+}
+.searchbar{
+    margin-left: 500px;
+    padding: 8px;
+    border-radius: 14px;
+    outline: none;
+}
+.searchbar:hover{
+    opacity: 0.5;
+}
+.fa-search{
+  position: absolute;
+  top: 40px;
+}
+.fa-search:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.svg{
+    padding-top: 100px;
+}
+.svg-btn{
+    height: 50px;
+    width: 180px;
+    font-size: 1.3rem;
+    border-radius: 14px;
+    background: black;
+    color: white;
+    position: absolute;
+    top: 800px;
+    z-index: 4;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+.svg-btn:hover{
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+.line{
+    border: 2px solid black;
+    width: 80%;
+  margin-left: 100px;
+}
+.productitem{
+    font-size: 1.2rem;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+.each-categories{
+    padding-top: 20px;
+}
+.cate-input{
+    padding: 20px;
+}
+.products-items-image{
+    width: 300px;
+    height: 300px;
+}
+.product-itemContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.products-items{
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #f3f3f3;
+    margin-top: 15px;
+}
+.cart-btn{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 14px;
+    outline: none;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 100px;
+    color: rgba(128, 123, 123, 0.4);
+    transition: 0.3s ease-in-out;
+}
+.cart-btn:hover{
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+    background: sandybrown;
+}
+footer{
+    margin-top: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    background: black;
+}
+h1{
+    color: white;
+}

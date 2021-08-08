@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.input-group{
+margin: 10px 0px;
+
+}
+.input-group.has-error input{
+border: 1px solid red;
+color: red;
+outline: red;
+}
+.error-msg{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+.input-group input{
+    padding: 5px 3px;
+    margin: 3px 0px;
+    border-radius: 14px;
+    width: 100%;
+    border: 1px solid rgb(68, 145, 247);
+    outline: none;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h-screen{
+    height: 100vh;
+}
+.flex-col{
+    flex-direction: column;
+}
+.feedback{
+    font-size: 12px;
+    font-style: italic;
+    color: lightgreen;
+}
+.feedback.error{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+.btn-link{
+    font-size: 12px;
+    font-style: italic;
+    color: blue;
+   
+}
+.btn-link:hover{
+    cursor: pointer;
+    color: red;
+}
